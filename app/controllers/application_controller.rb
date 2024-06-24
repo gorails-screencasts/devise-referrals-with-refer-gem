@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  set_referral_cookie
   impersonates :user
   include Pundit::Authorization
 
